@@ -1,7 +1,7 @@
 var TR = {
   // background
   backgroundTitle: 'Fondo',
-  backgroundReset: 'Reiniciar',//double check: Reset
+  backgroundReset: 'Reiniciar',
   backgroundImport: 'Importar (jpg, png...)',
   backgroundFill: 'Llenar',
 
@@ -13,14 +13,14 @@ var TR = {
   cameraLeft: 'Izquierda (L)',
   cameraTop: 'Superficie (T)',
   cameraMode: 'Modalidad',//double check : Mode 
-  cameraOrbit: 'Órbita (Plato giratorio)',//double check : Turntable
-  cameraSpherical: 'Esférico (Bola de desplazamiento)',//double check : Trackball
-  cameraPlane: 'Plano (Bola de desplazamiento)',//double check : Trackball
+  cameraOrbit: 'Órbita (Turntable)',
+  cameraSpherical: 'Esférico (Trackball)',
+  cameraPlane: 'Plano (Trackball)',
   cameraProjection: 'Proyección',
   cameraPerspective: 'Perspectiva',
   cameraOrthographic: 'Ortográfico',
   cameraFov: 'Fov',
-  cameraPivot: 'Punto de Recogida',//double check : Picking Point
+  cameraPivot: 'Punto de Pivote',
 
   // file
   fileTitle: 'Archivo (importar/exportar)',
@@ -28,8 +28,8 @@ var TR = {
   fileAdd: 'Agregar (obj, sgl, ply, stl)',
   fileAutoMatrix: 'Escala y Centrar',
   fileVertexSRGB: 'sRGB Vértice Color',
-  fileExportSceneTitle: 'Exporta Escena',
-  fileExportAll: 'Exportar Todo',
+  fileExportSceneTitle: 'Exporta escena',
+  fileExportAll: 'Exportar todo',
   fileExportSGL: 'Guardar .sgl (SculptGL)',
   fileExportOBJ: 'Guardar .obj',
   fileExportPLY: 'Guardar .ply',
@@ -37,7 +37,7 @@ var TR = {
 
   // scene
   sceneTitle: 'Escena',
-  sceneReset: 'Clear escena',
+  sceneReset: 'Reiniciar escena',
   sceneAddSphere: 'Agregar Esfera',
   sceneAddCube: 'Agregar Cubo',
   sceneAddCylinder: 'Agregar Cilindro',
@@ -47,59 +47,59 @@ var TR = {
   sceneDuplicate: 'Copiar selección',
 
   // mesh
-  meshTitle: 'Malla',
+  meshTitle: 'Malla',//maybe just leave as mesh
   meshNbVertices: 'Vértice : ',
-  meshNbFaces: 'Faz : ',
+  meshNbFaces: 'Cara : ',
 
   // topology
   topologyTitle: 'Topología ',
 
   //multires
-  multiresTitle: 'Multiresolution',
-  multiresSubdivide: 'Subdivide',
-  multiresReverse: 'Revés',//double check : Reverse
+  multiresTitle: 'Multiresolución',
+  multiresSubdivide: 'Subdividir',
+  multiresReverse: 'Revirtir',//double check : Reverse
   multiresResolution: 'Resolución',
-  multiresNoLower: 'There is no lower resolución level.',
-  multiresNoHigher: 'There is no higher resolución level.',
-  multiresDelHigher: 'Eliminar superior',
-  multiresDelLower: 'Eliminar inferior',
-  multiresSelectLowest: 'Select the lowest resolution before reversing.',
-  multiresSelectHighest: 'Select the highest resolution before subdividing.',
+  multiresNoLower: 'No hay un nivel de resolución inferior.',
+  multiresNoHigher: 'No hay un nivel de resolución superior.',
+  multiresDelHigher: 'Eliminar nivel superior',
+  multiresDelLower: 'Eliminar nivel inferior',
+  multiresSelectLowest: 'Seleccione la resolución más baja antes de subdividir.',
+  multiresSelectHighest: 'Seleccione la resolución más alto antes de subdividir.',
   multiresWarnBigMesh: function (nbFacesNext) {
-    return 'The next subdivision level will reach ' + nbFacesNext + ' faces.\n' +
-      'If you know what you are doing, click again on "subdivide".';
+    return 'El próximo nivel de subdivisión alcanzará ' + nbFacesNext + ' caras.\n' +
+      'Si sabe lo que está haciendo, vuelva a hacer clic en "subdividir".';
   },
-  multiresNotReversible: 'Sorry it is not possile to reverse this mesh.\n' +
-    'The mesh is not a product of a (loop-catmull) subdivision surface on a manifold mesh.',
+  multiresNotReversible: 'Lo siento, no es posible revertir esta malla.\n' +
+    'La malla no es un producto de una superficie de subdivisión (loop-catmull) en una malla múltiple.',//double check : manifold mesh
 
   // remesh
-  remeshTitle: 'Voxel Remeshing',
-  remeshRemesh: 'Remesh',
-  remeshResolution: 'Resolution',
+  remeshTitle: 'Remallar volumétrico',//double check : Remesh
+  remeshRemesh: 'Remallar',//double check : Remesh
+  remeshResolution: 'Resolución',
   remeshBlock: 'Trozo',
 
   // dynamic
-  dynamicTitle: 'Dynamic Topology',
-  dynamicActivated: 'Activated (no quads)',
-  dynamicSubdivision: 'Subdivision',
-  dynamicDecimation: 'Decimation',
-  dynamicLinear: 'Linear subdivision',
+  dynamicTitle: 'Topología Dinámica',
+  dynamicActivated: 'Activado (sin quads)',
+  dynamicSubdivision: 'Subdivisión',
+  dynamicDecimation: 'Aniquilación',
+  dynamicLinear: 'Subdivisión Lineal',
 
   // sculpt
-  sculptTitle: 'Sculpting & Painting',
-  sculptBrush: 'Brush',
-  sculptInflate: 'Inflate',
-  sculptTwist: 'Twist',
-  sculptSmooth: 'Smooth (-Shift)',
-  sculptFlatten: 'Flatten',
-  sculptPinch: 'Pinch',
-  sculptCrease: 'Crease',
-  sculptDrag: 'Drag',
-  sculptPaint: 'Paintar',
-  sculptMasking: 'Masking (-Ctrl)',
+  sculptTitle: 'Esculpiendo & Pintando',
+  sculptBrush: 'Brocha',
+  sculptInflate: 'Inflar',
+  sculptTwist: 'Girar',//double check : Twist
+  sculptSmooth: 'Alisar (-Shift)',
+  sculptFlatten: 'Aplanar',
+  sculptPinch: 'Pellizcar',
+  sculptCrease: 'Doblar',
+  sculptDrag: 'Arrastrar',
+  sculptPaint: 'Pintar',
+  sculptMasking: 'Enmascarar (-Ctrl)',// double check : Masking
   sculptMove: 'Mover',
   sculptLocalScale: 'Escala Local',
-  sculptTransform: 'Transform (E)',
+  sculptTransform: 'Transformar (E)',
 
   sculptCommon: 'Común',
   sculptTool: 'Instrumento',
@@ -110,9 +110,9 @@ var TR = {
   sculptHardness: 'Dureza',
   sculptCulling: 'Superficie delgada (Solo Vértice Frontal)',
   sculptAlphaTitle: 'Alfa',
-  sculptLockPositon: 'Lock position',
+  sculptLockPositon: 'Posición de bloqueo',
   sculptAlphaTex: 'Textura',
-  sculptImportAlpha: 'Importar alpha tex (jpg, png...)',
+  sculptImportAlpha: 'Importar textura alfa (jpg, png...)',
   sculptNegative: 'Negativo (N or -Alt)',
   sculptColor: 'Albedo',
   sculptRoughness: 'Rugosidad',
@@ -121,13 +121,13 @@ var TR = {
   sculptAccumulate: 'Accumular (Sin límite por golpe)',
   sculptColorGlobal: 'Global',
   sculptPickColor: 'Material / Selector de Color (-S)',
-  sculptTangentialSmoothing: 'Relax only',
+  sculptTangentialSmoothing: 'Reljarse solo',
   sculptTopologicalCheck: 'Control Topológico',
-  sculptMoveAlongNormal: 'Move along normal (N or -Alt)',
-  sculptMaskingClear: 'Clear (-Ctrl + Drag)',
-  sculptMaskingInvert: 'Invert (-Ctrl + Click)',
+  sculptMoveAlongNormal: 'Mover de acuerdo a lo normal (N or -Alt)',
+  sculptMaskingClear: 'Quitar (-Ctrl + Drag)',//double check : clear
+  sculptMaskingInvert: 'Invertir (-Ctrl + Click)',
   sculptMaskingBlur: 'Difuminar',
-  sculptMaskingSharpen: 'Sharpen',
+  sculptMaskingSharpen: 'Enfocar',
   sculptPBRTitle: 'PBR materiales',
   sculptPaintAll: 'Pintar todo',
   sculptExtractTitle: 'Extraer',
@@ -138,17 +138,17 @@ var TR = {
   stateTitle: 'Historia',
   stateUndo: 'Deshacer',
   stateRedo: 'Rehacer',
-  stateMaxStack: 'Max Stack',
+  stateMaxStack: 'Número máximo de acciones',
 
   // pressure
-  pressureTitle: 'Tablet pressure',
-  pressureRadius: 'Pressure radius',
-  pressureIntensity: 'Pressure intensity',
+  pressureTitle: 'Presión de la tableta',
+  pressureRadius: 'Radio de presión',
+  pressureIntensity: 'Intensidad de presión',
 
   // rendering
-  renderingTitle: 'Rendering',
-  renderingGrid: 'Show cuadro',
-  renderingSymmetryLine: 'Show mirror línea',
+  renderingTitle: 'Representación',
+  renderingGrid: 'Cuadrícula cuadro',
+  renderingSymmetryLine: 'Mostrar línea de simetría',
   renderingMatcap: 'Matcap',
   renderingCurvature: 'Curvatura',
   renderingPBR: 'PBR',
@@ -160,18 +160,18 @@ var TR = {
   renderingImportUV: 'Importar (jpg, png...)',
   renderingImportMatcap: 'Importar (jpg, png...)',
   renderingExtra: 'Extra',
-  renderingFlat: 'Flat shading',
-  renderingWireframe: 'Wireframe (W)',
-  renderingExposure: 'Exposure',
-  renderingEnvironment: 'Environment',
-  renderingIsolate: 'Isolate/Show (I)',
+  renderingFlat: 'Sombreado plano',
+  renderingWireframe: 'Marco de Alambre (W)',//Wireframe
+  renderingExposure: 'Exposición',
+  renderingEnvironment: 'Ambiente',
+  renderingIsolate: 'Aislar/Vista (I)',
   renderingFilmic: 'Filmic tonemapping',
 
   // contour
   contour: 'Contorno',
   contourShow: 'Mostrar contorno',
   contourColor: 'Color',
-  darkenUnselected: 'Darken unselected',
+  darkenUnselected: 'Oscurecer no seleccionado',
 
   // pixel ratio
   resolution: 'Resolución',
@@ -184,28 +184,28 @@ var TR = {
   matcapWhite: 'Blanco',
 
   // sketchfab
-  sketchfabTitle: 'Go to Sketchfab !',
-  sketchfabUpload: 'Upload',
-  sketchfabUploadMessage: 'Please enter your sketchfab API Key.\n' +
-    'You can also leave "guest" to upload anonymously.\n' +
-    '(a new window will pop up when the uploading and processing is finished)',
+  sketchfabTitle: 'Ir a Sketchfab !',
+  sketchfabUpload: 'Subir',//double check : upload
+  sketchfabUploadMessage: 'Por favor ingrese su clave API de sketchfab.\n',
+  
+  
   sketchfabUploadError: function (error) {
     return 'Sketchfab upload error :\n' + error;
   },
-  sketchfabUploadSuccess: 'Upload success !\nHere is your link :',
+  sketchfabUploadSuccess: 'Carga exitosa !\nAquí está tu enlace :',
   sketchfabAbort: 'Aborta última carga ?',
-  sketchfabUploadProcessing: 'Processing...\nYour model will be available at :',
+  sketchfabUploadProcessing: 'Procesamiento...\nSu modelo estará disponible en :',
 
-  about: 'About & Ayuda',
+  about: 'Información & Ayuda',
 
   alphaNone: 'Niguno',
   alphaSquare: 'Cuadro',
   alphaSkin: 'Piel',
 
-  envFootPrint: 'Foot Print',
-  envGlazedPatio: 'Glazed Patio',
-  envNicolausChurch: 'St Nicolaus church',
-  envTerrace: 'Terrace',
+  envFootPrint: 'Huella',
+  envGlazedPatio: 'Patio Acristalado',
+  envNicolausChurch: 'Iglesia St Nicolaus',
+  envTerrace: 'Terraza',
   envBryantPark: 'BryantPark'
 };
 
