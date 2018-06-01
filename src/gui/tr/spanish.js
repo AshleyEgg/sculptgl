@@ -193,14 +193,14 @@ var TR = {
     return 'Sketchfab upload error :\n' + error;
   },
   sketchfabUploadSuccess: 'Upload success !\nHere is your link :',
-  sketchfabAbort: 'Abort the last upload ?',
+  sketchfabAbort: 'Aborta última carga ?',
   sketchfabUploadProcessing: 'Processing...\nYour model will be available at :',
 
   about: 'About & Ayuda',
 
-  alphaNone: 'None',
-  alphaSquare: 'Square',
-  alphaSkin: 'Skin',
+  alphaNone: 'Niguno',
+  alphaSquare: 'Cuadro',
+  alphaSkin: 'Piel',
 
   envFootPrint: 'Foot Print',
   envGlazedPatio: 'Glazed Patio',
