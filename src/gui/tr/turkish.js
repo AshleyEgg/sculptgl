@@ -28,8 +28,8 @@ var TR = {
   fileAdd: 'Aktar (obj, sgl, ply, stl)',
   fileAutoMatrix: 'Ölçekle ve ortala',
   fileVertexSRGB: 'sRGB verteks renk',
+  fileExportMeshTitle: 'Nesneyi Dışa Aktar',
   fileExportSceneTitle: 'Sahneyi Dışa Aktar',
-  fileExportAll: 'tümünü ver',
   fileExportSGL: 'Kaydet .sgl (SculptGL)',
   fileExportOBJ: 'Kaydet .obj',
   fileExportPLY: 'Kaydet .ply',
@@ -44,7 +44,6 @@ var TR = {
   sceneAddTorus: 'Halka ekle',
   sceneSelection: 'Seçim',
   sceneMerge: 'Seçimi birleştir',
-  sceneDuplicate: null,
 
   // mesh
   meshTitle: 'Nesne',
@@ -100,6 +99,12 @@ var TR = {
   sculptMove: 'Taşı',
   sculptLocalScale: 'Yerel ölçek',
   sculptTransform: 'Transform (E)',
+  sculptCircumference: 'Çevresi',
+  sculptAnteriorDepth: 'A/P Ölçüm',
+  sculptLateralDepth: 'M/L Ölçüm',
+  sculptScale: 'Ölçek',
+  sculptPlaneCut: 'Pyüzey Kesimi',
+  sculptMirror: 'Yansıtmak',
 
   sculptCommon: 'Genel',
   sculptTool: 'Araç',
@@ -148,7 +153,7 @@ var TR = {
   // rendering
   renderingTitle: 'Sahneleme',
   renderingGrid: 'Izgarayı göster',
-  renderingSymmetryLine: 'aynalama çizgisini göster',
+  renderingSymmetryLine: 'Aynalama çizgisini göster',
   renderingMatcap: 'Matcap',
   renderingCurvature: 'Eğrilik',
   renderingPBR: 'PBR',

@@ -44,12 +44,11 @@ var TR = {
   sceneAddTorus: 'Ajouter tore',
   sceneSelection: 'Sélection',
   sceneMerge: 'Fusionner selection',
-  sceneDuplicate: null,
 
   // mesh
-  meshTitle: 'Mesh',
-  meshNbVertices: 'Vertex : ',
-  meshNbFaces: 'Faces : ',
+  meshTitle: 'Filet',
+  meshNbVertices: 'Sommet : ',
+  meshNbFaces: 'Surface : ',
 
   // topology
   topologyTitle: 'Topologie',
@@ -100,6 +99,12 @@ var TR = {
   sculptMove: 'Bouger',
   sculptLocalScale: 'Mise à l\'échelle locale',
   sculptTransform: 'Transformer (E)',
+  sculptCircumference: 'Circonférence',
+  sculptAnteriorDepth: 'A/P Mesure',
+  sculptLateralDepth: 'M/L Mesure',
+  sculptScale: 'Échelle',
+  sculptPlaneCut: 'Coupe Plane',
+  sculptMirror: 'Refléter'
 
   sculptCommon: 'Commun',
   sculptTool: 'Outil',
