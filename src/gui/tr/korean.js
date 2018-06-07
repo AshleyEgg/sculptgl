@@ -44,7 +44,6 @@ var TR = {
   sceneAddTorus: '도넛 추가하기',
   sceneSelection: '선택',
   sceneMerge: '장면 병합하기',
-  sceneDuplicate: null,
 
   // mesh
   meshTitle: '메시',
@@ -100,6 +99,12 @@ var TR = {
   sculptMove: '잡아당기기',
   sculptLocalScale: '지역 스케일',
   sculptTransform: '변환 (E)',
+  sculptCircumference: '원주',
+  sculptAnteriorDepth: 'A/P 치수',
+  sculptLateralDepth: 'M/L 치수',
+  sculptScale: '축척',
+  sculptPlaneCut: '평면 절단',
+  sculptMirror: '반영하다',
 
   sculptCommon: '일반',
   sculptTool: '도구',
@@ -198,9 +203,9 @@ var TR = {
 
   about: 'SculptGL 정보',
 
-  alphaNone: null,
-  alphaSquare: null,
-  alphaSkin: null,
+  alphaNone: '아무도',
+  alphaSquare: '정사각형',
+  alphaSkin: '피부',
 
   envFootPrint: null,
   envGlazedPatio: null,

@@ -44,10 +44,9 @@ var TR = {
   sceneAddTorus: 'Agregar Toro',
   sceneSelection: 'Selección',
   sceneMerge: 'Fundirse selección',
-  sceneDuplicate: 'Copiar selección',
 
   // mesh
-  meshTitle: 'Malla',//maybe just leave as mesh
+  meshTitle: 'Malla',
   meshNbVertices: 'Vértice : ',
   meshNbFaces: 'Cara : ',
 
@@ -99,7 +98,13 @@ var TR = {
   sculptMasking: 'Enmascarar (-Ctrl)',// double check : Masking
   sculptMove: 'Mover',
   sculptLocalScale: 'Escala Local',
-  sculptTransform: 'Transformar (E)',
+  sculptTransform: 'Mover (E)',
+  sculptCircumference: 'Circunferencia',
+  sculptAnteriorDepth: 'A/P Medida',
+  sculptLateralDepth: 'M/L Medida',
+  sculptScale: 'Modificar la Escala',
+  sculptPlaneCut: 'Corte Plano',
+  sculptMirror: 'Reflejar',
 
   sculptCommon: 'Común',
   sculptTool: 'Instrumento',
